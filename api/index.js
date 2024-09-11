@@ -9,7 +9,7 @@ const app = new Hono().basePath("/api");
 app.use(
   "*",
   cors({
-    origin: ["https://example.com", "http://localhost:5173", 'http://localhost:5173'],
+    origin: ["https://example.com", "http://localhost:5173", 'http://localhost:5173', 'https://form-smkn7-fe.vercel.app'],
     allowHeaders: ["Content-Type", "Authorization"],
     exposeHeaders: ["Content-Length"],
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
